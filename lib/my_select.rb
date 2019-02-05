@@ -7,6 +7,7 @@ def my_select(collection)
       yield(collection[i])
       i += 1
     end
+  collection
   else puts "No block was given"
   end
 end
