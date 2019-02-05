@@ -4,10 +4,10 @@ def my_select(collection)
     new_collection = []
     i = 0
     while i < collection.length 
-      yield(collection[i])
+      new_collection << yield(collection[i])
       i += 1
     end
-  collection
+  new_collection
   else puts "No block was given"
   end
 end
